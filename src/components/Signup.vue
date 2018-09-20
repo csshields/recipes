@@ -3,6 +3,7 @@
     <p>Let's create a new account !</p>
     <input type="text" v-model="email" placeholder="Email"><br>
     <input type="password" v-model="password" placeholder="Password"><br>
+    <input type="username" v-model="username" placeholder="User Name"><br>
     <button v-on:click="signUp">Sign Up</button>
     <span>or go back to <router-link to="/login">login</router-link>.</span>
   </div>
@@ -15,7 +16,8 @@
     data: function() {
       return {
         email: '',
-        password: ''
+        password: '',
+        username: '',
       }
     },
     methods: {
